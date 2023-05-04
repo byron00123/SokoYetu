@@ -1,17 +1,32 @@
 import React, { useState, useEffect } from "react";
 import ProductList from "./ProductList";
 
-const FilterCategory = ({ category }) => {
-  const [products, setProducts] = useState([]);
+const FilterCategory = ({ getSearch }) => {
+  const [search, setSearch] = useState("");
+  function handleSubmit(e){
+    e.preventDefault()
+    getSearch(search)
+  }
+  return (
+    <div className="main">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
 
-  useEffect(() => {
-    fetch(`http://localhost:8000/electronics?category=${category}`)
-      .then((response) => response.json())
-      .then((data) => setProducts(data))
-      .catch((error) => console.log(error));
-  }, [category]);
-
-  return <ProductList products={products} />;
+      {/* <input list="data" placeholder='search by category'/>
+    <datalist id='data'>
+      <select name="" id="">
+      <option>Laptop</option>
+      <option>Smartphone</option>
+      </select>
+    </datalist> */}
+    </div>
+  );
 };
 
 export default FilterCategory;
