@@ -5,15 +5,16 @@ import { FaShoppingCart } from 'react-icons/fa';
 function Navbar() {
   const [cartItems, setCartItems] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
   const handleSearchSubmit = (event) => {
-    event.preventDefault();
-    // handle search logic here
+    //handle search logic
   };
+  
 
   const handleCartClick = () => {
     // handle cart popup logic here

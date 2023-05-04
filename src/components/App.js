@@ -77,6 +77,16 @@ function App() {
       console.log(error);
     }
   };
+  const filterProducts = (searchTerm) => {
+    const filtered = products.filter((product) => {
+      const productName = product.name.toLowerCase();
+      const productCategory = product.category.toLowerCase();
+      const term = searchTerm.toLowerCase();
+      return productName.includes(term) || productCategory.includes(term);
+    });
+    setFilteredProducts(filtered);
+  };
+  
 
   const handleAddToCart = (product) => {
     setCart([...cart, product]);
