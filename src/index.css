@@ -68,46 +68,61 @@
  
 
 /*navbar */ 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+.navbar__logo img {
+  height: 3rem;
 }
 
-.cart-icon {
+.navbar__search input[type="text"] {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.navbar__search button {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navbar__cart {
   position: relative;
   cursor: pointer;
 }
 
-.cart-icon i {
-  font-size: 1.5rem;
+.navbar__cart-icon {
+  font-size: 2rem;
 }
 
-.cart-icon span {
+.navbar__cart-count {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 20px;
-  height: 20px;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #007bff;
-  font-size: 0.8rem;
-  font-weight: bold;
 }
+
 /* Carousel*/
 .carousel {
   display: flex;
@@ -190,6 +205,63 @@ h1::after {
 
 
 /* update and add styling  */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5e9cd3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a87c5;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #ddd;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5e9cd3;
+  box-shadow: 0 0 5px rgba(94, 156, 211, 0.5);
+}
 
 
 /*Footer*/
