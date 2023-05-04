@@ -1,41 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
+import React, { useState, useEffect } from "react";
 
-function Carousel() {
-  const [products, setProducts] = useState([]);
+function Carousel({ images }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    async function fetchProducts() {
-      try {
-        const response = await fetch('http://localhost:8000/electronics');
-        const productsData = await response.json();
-        setProducts(productsData);
-      } catch (error) {
-        console.error(error);
-      }
-    }
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex(
+        currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1
+      );
+    }, 5000);
 
-    fetchProducts();
-  }, []);
+    return () => clearInterval(intervalId);
+  }, [currentImageIndex, images.length]);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000
+  const handlePrevClick = () => {
+    setCurrentImageIndex(
+      currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1
+    );
   };
 
+  const handleNextClick = () => {
+    setCurrentImageIndex(
+      currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1
+    );
+  };
+
+  if (!images || !Array.isArray(images) || images.length === 0) {
+    return <div>No images to display</div>;
+  }
+
   return (
-    <Slider {...settings}>
-      {products.map(product => (
-        <div key={product.id}>
-          <img src={product.image} alt={product.name} />
-        </div>
-      ))}
-    </Slider>
+    <div className="carousel">
+      <div className="carousel-image-container">
+        <img src={images[currentImageIndex]} alt="" />
+      </div>
+      <div className="carousel-controls">
+        <button onClick={handlePrevClick}>Prev</button>
+        <button onClick={handleNextClick}>Next</button>
+      </div>
+    </div>
   );
 }
 

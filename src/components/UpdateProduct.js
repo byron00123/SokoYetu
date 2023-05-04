@@ -4,7 +4,9 @@ function UpdateProduct() {
   const [product, setProduct] = useState({
     name: "",
     price: "",
-    description: "",
+    category: "",
+    quantity: "",
+    imgUrl: "",
   });
 
   const handleChange = (event) => {
@@ -30,7 +32,9 @@ function UpdateProduct() {
           setProduct({
             name: "",
             price: "",
-            description: "",
+            category: "",
+            quantity: "",
+            imgUrl: "",
           });
         } else {
           alert("Error updating product.");
@@ -67,10 +71,31 @@ function UpdateProduct() {
           />
         </label>
         <label>
-          Description:
-          <textarea
-            name="description"
-            value={product.description}
+          Category:
+          <input
+            type="text"
+            name="category"
+            value={product.category}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Quantity:
+          <input
+            type="number"
+            name="quantity"
+            value={product.quantity}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Image Url:
+          <input
+            type="text"
+            name="imgUrl"
+            value={product.imgUrl}
             onChange={handleChange}
             required
           />

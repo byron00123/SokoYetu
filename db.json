@@ -71,14 +71,6 @@
       "category": "Laptop",
       "quantity": "20",
       "img": "https://www.dataworld.co.ke/wp-content/uploads/2021/08/Asus-Laptop-Series-E410MA-BV025T-4GB-RAM-256GB-SSD.jpg"
-    },
-    {
-      "name": "Samsung gALAXY ",
-      "category": "Smart Phone",
-      "quantity": "20",
-      "price": "50000",
-      "imageUrl": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/03/Samsung-Galaxy-F23-photo-photoutils.com_.png?ssl=1&quality=80&w=f",
-      "id": 11
     }
   ]
 }

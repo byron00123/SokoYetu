@@ -30,10 +30,7 @@ function AddProduct(props) {
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" value={product.name || ''} onChange={handleInputChange} required />
       </div>
-      <div>
-        <label htmlFor="description">Description</label>
-        <textarea id="description" name="description" value={product.description || ''} onChange={handleInputChange} required />
-      </div>
+      
       <div>
         <label htmlFor="category">Category</label>
         <input type="text" id="category" name="category" value={product.category || ''} onChange={handleInputChange} required />
