@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function UpdateProduct() {
+function UpdateProduct({ productId }) {
   const [product, setProduct] = useState({
     name: "",
     price: "",
@@ -19,33 +19,33 @@ function UpdateProduct() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch("http://localhost:8000/electronics", {
+    fetch(`http://localhost:8000/electronics/${productId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(product),
     })
-      .then((response) => {
-        if (response.ok) {
-          alert("Product updated successfully.");
-          setProduct({
-            name: "",
-            price: "",
-            category: "",
-            quantity: "",
-            imgUrl: "",
-          });
-        } else {
-          alert("Error updating product.");
-        }
-      })
-      .catch((error) => {
-        console.log(error);
+    .then((response) => {
+      if (response.ok) {
+        alert("Product updated successfully.");
+        setProduct({
+          name: "",
+          price: "",
+          category: "",
+          quantity: "",
+          imgUrl: "",
+        });
+      } else {
         alert("Error updating product.");
-      });
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Error updating product.");
+    });
   };
-
+  
   return (
     <div>
       <h2>Update Product</h2>

@@ -49,12 +49,18 @@ import FilterCategory from './FilterCategory';
 
 function Navbar({ getSearch }) {
   const [cartItems, setCartItems] = useState([]);
+<<<<<<< HEAD
   const [search, setSearch] = useState("");
+=======
+  const [searchTerm, setSearchTerm] = useState('');
+  
+>>>>>>> refs/remotes/origin/main
 
   const handleSearchChange = (event) => {
     setSearch(event.target.value);
   };
 
+<<<<<<< HEAD
   // const getSearch = (searchValue) => {
   //   // handle search logic here
 
@@ -64,7 +70,12 @@ function Navbar({ getSearch }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     getSearch(search)
+=======
+  const handleSearchSubmit = (event) => {
+    //handle search logic
+>>>>>>> refs/remotes/origin/main
   };
+  
 
   const handleCartClick = () => {
     // handle cart popup logic here
@@ -74,7 +85,7 @@ function Navbar({ getSearch }) {
     <nav className="navbar">
       
       <div className="navbar__logo">
-        <img src="" alt="Sokoyetu" />
+        <img src="public/logo192.png" alt="Sokoyetu" />
       </div>
       {/* <form className="navbar__search" onSubmit={handleSubmit} >
         <input
