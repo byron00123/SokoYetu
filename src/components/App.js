@@ -127,7 +127,7 @@ function App() {
     <Router>
       <div>
         <Navbar getSearch={getSearch} />
-        <FilterCategory getSearch ={getSearch}/>
+        
 
         <AddProduct />
         <UpdateProduct productId={productId} />

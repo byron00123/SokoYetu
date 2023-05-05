@@ -100,7 +100,7 @@ function UpdateProduct({ productId }) {
             required
           />
         </label>
-        <button type="submit">Update Product</button>
+        <button type="submit">Update</button>
       </form>
     </div>
   );

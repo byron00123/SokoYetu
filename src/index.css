@@ -6,6 +6,7 @@
 
 
 
+
 }
 
 .product-item {
@@ -81,13 +82,29 @@
   height: 3rem;
 }
 
+.navbar__search {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navbar__search form {
+  display: flex;
+  align-items: center;
+}
+
 .navbar__search input[type="text"] {
   border: none;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
-  margin-right: 1rem;
   font-size: 1rem;
 }
+.navbar__logo img[alt="SokoYetu"] {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #2196f3;
+}
+
 
 .navbar__search button {
   border: none;
@@ -123,6 +140,7 @@
   align-items: center;
 }
 
+
 /* Carousel*/
 .carousel {
   display: flex;
@@ -138,11 +156,14 @@
   max-width: 800px;
   height: auto;
   margin-bottom: 1rem;
+  overflow: hidden; /* Hide overflow */
+  height: 500px; /* Set a fixed height */
 }
 
 .carousel-image-container img {
   width: 100%;
-  height: auto;
+  height: 100%; /* Set height to 100% to fill container */
+  object-fit: cover; /* Cover container while maintaining aspect ratio */
 }
 
 .carousel-controls {
@@ -340,3 +361,103 @@ text-decoration: underline;
 color: #666;
 }
 
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel-image-container {
+    max-width: 500px;
+  }
+
+  .carousel-image-container img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-item {
+    padding: 5px;
+  }
+
+  .product-item img {
+    width: 70%;
+    max-height: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar__search {
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+  
+  .navbar__search input[type="text"] {
+    width: 100%;
+  }
+  
+  .navbar__cart {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  label, input {
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  input {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-bottom-right {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-col {
+    width: 100%;
+  }
+  
+  .footer-social-icons {
+    margin-right: 10px;
+  }
+}

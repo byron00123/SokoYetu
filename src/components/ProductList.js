@@ -34,8 +34,8 @@ function ProductList({ addToCart, products, deleteProduct}) {
             <p>
               {productItem.category}|{productItem.quantity}
             </p>
-            <button className='add-to-cart' onClick={() => addToCart(productItem)}>Add To Cart</button>
-            <button className='delete' onClick={() => deleteProduct(productItem.id)}>Delete</button>
+            <button className='add-to-cart' onClick={() => addToCart(productItem)}> <i class="fas fa-cart-plus"></i></button>
+            <button className='delete' onClick={() => deleteProduct(productItem.id)}><i class="fas fa-trash"></i></button>
           </div>
         </div>
       ))}
