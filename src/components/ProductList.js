@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 
-function ProductList({ addToCart }) {
-  const [products, setProducts] = useState([]);
+function ProductList({ addToCart, products, deleteProduct}) {
+  // const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch('http://localhost:8000/electronics')
-      .then(response => response.json())
-      .then(data => setProducts(data))
-      .catch(error => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:8000/electronics')
+  //     .then(response => response.json())
+  //     .then(data => setProducts(data))
+  //     .catch(error => console.log(error));
+  // }, []);
 
-  function handleDelete(id) {
-    fetch(`http://localhost:8000/electronics/${id}`, {
-      method: 'DELETE',
-    })
-      .then(() => setProducts(products.filter(product => product.id !== id)))
-      .catch(error => console.log(error));
-  }
+  // function handleDelete(id) {
+  //   fetch(`http://localhost:8000/electronics/${id}`, {
+  //     method: 'DELETE',
+  //   })
+  //     .then(() => setProducts(products.filter(product => product.id !== id)))
+  //     .catch(error => console.log(error));
+  // }
+
+  // function handleDelete(id){
+  //   getDele
+  // }
 
   return (
     <div className='product-grid'>
@@ -31,7 +35,7 @@ function ProductList({ addToCart }) {
               {productItem.category}|{productItem.quantity}
             </p>
             <button className='add-to-cart' onClick={() => addToCart(productItem)}>Add To Cart</button>
-            <button className='delete' onClick={() => handleDelete(productItem.id)}>Delete</button>
+            <button className='delete' onClick={() => deleteProduct(productItem.id)}>Delete</button>
           </div>
         </div>
       ))}

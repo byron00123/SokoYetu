@@ -15,7 +15,7 @@ const FilterCategory = ({ getSearch }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit">Search</button>
       </form>
 
       {/* <input list="data" placeholder='search by category'/>

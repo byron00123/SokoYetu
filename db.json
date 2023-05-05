@@ -4,7 +4,7 @@
       "id": 1,
       "productname": "Dell Inspiron 15 ",
       "price": "40000",
-      "category": "Intel Core i3-7130U 8GB 1TB HDD 15.6 HD LED Win 10 Laptop",
+      "category": "Laptop",
       "quantity": "20",
       "img": "https://mcphilipsdigital.co.ke/wp-content/uploads/2020/06/1526055338000_IMG_987063.jpg"
     },
@@ -28,7 +28,7 @@
       "id": 5,
       "productname": "Huawei P20 Pro ",
       "price": "40",
-      "category": "Smart Phone",
+      "category": "Smartphone",
       "quantity": "20",
       "img": "https://i.insider.com/5c07ebd14b676b01f52cb98e?width=1000&format=jpeg&auto=webp"
     },
@@ -36,17 +36,9 @@
       "id": 6,
       "productname": "Asus Zenfone 9 ",
       "price": "18900",
-      "category": "Smart Phone",
-      "quantity": "20",
-      "img": "https://www.techadvisor.com/wp-content/uploads/2022/07/Asus-Zenfone-9_review.jpg?resize=1024%2C576&quality=50&strip=all"
-    },
-    {
-      "id": 7,
-      "productname": "Apple iPhone 14 Plus",
-      "price": "129,000 ",
       "category": "Smartphone",
       "quantity": "20",
-      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-blue?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1661027942322"
+      "img": "https://www.techadvisor.com/wp-content/uploads/2022/07/Asus-Zenfone-9_review.jpg?resize=1024%2C576&quality=50&strip=all"
     },
     {
       "id": 8,
@@ -63,14 +55,6 @@
       "category": "Laptop",
       "quantity": "20",
       "img": "https://textbookcentre.com/media/cache/e2/8c/e28c48fddc380ff93f961a968b954e0f.jpg"
-    },
-    {
-      "id": 10,
-      "productname": "Asus X543U Core  ",
-      "price": "61,600",
-      "category": "Laptop",
-      "quantity": "20",
-      "img": "https://www.dataworld.co.ke/wp-content/uploads/2021/08/Asus-Laptop-Series-E410MA-BV025T-4GB-RAM-256GB-SSD.jpg"
     }
   ]
 }
