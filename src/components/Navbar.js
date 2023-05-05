@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src="" alt="Sokoyetu" />
+        <img src="public/logo192.png" alt="Sokoyetu" />
       </div>
       <form className="navbar__search" onSubmit={handleSearchSubmit}>
         <input

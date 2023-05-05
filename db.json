@@ -71,6 +71,111 @@
       "category": "Laptop",
       "quantity": "20",
       "img": "https://www.dataworld.co.ke/wp-content/uploads/2021/08/Asus-Laptop-Series-E410MA-BV025T-4GB-RAM-256GB-SSD.jpg"
+    },
+    {
+      "id": 11,
+      "productname": "Apple iPhone 13",
+      "price": "999",
+      "category": "Smartphone",
+      "quantity": "135000",
+      "img": "https://www.phonestablets.co.ke/wp-content/uploads/2021/09/Apple-iPhone-13-Midnight.jpg"
+    },
+    {
+      "id": 12,
+      "productname": "Samsung Galaxy S21",
+      "price": "12000",
+      "category": "Smartphone",
+      "quantity": "30",
+      "img": "https://techcloud.co.ke/wp-content/uploads/2021/07/Samsung-Galaxy-S21-5G-128GB-Phantom-Grey-8806090892776-18012021-01-p.jpg"
+    },
+    {
+      "id": 13,
+      "productname": "HP Pavilion x360",
+      "price": "130000",
+      "category": "Laptop",
+      "quantity": "25",
+      "img": "https://i.rtings.com/assets/products/i7SJ0pYN/hp-pavilion-x360-14-2021/design-medium.jpg"
+    },
+    {
+      "id": 14,
+      "productname": "Lenovo ThinkPad X1 Carbon",
+      "price": "60000",
+      "category": "Laptop",
+      "quantity": "10",
+      "img": "https://skygarden.azureedge.net/media/products/968098-faa3d6744459427fab02d27a57702965.jpg"
+    },
+    {
+      "id": 15,
+      "productname": "Apple Watch Series 7",
+      "price": "20000",
+      "category": "Smartwatch",
+      "quantity": "15",
+      "img": "https://www.zdnet.com/a/img/2021/11/02/3fb8411f-1bcc-47cd-99e2-bb3fb393f34b/apple-watch-series-7-3.jpg"
+    },
+    {
+      "id": 16,
+      "productname": "Bose QuietComfort Earbuds",
+      "price": "6999",
+      "category": "Earbuds",
+      "quantity": "20",
+      "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471291_sd.jpg;maxHeight=640;maxWidth=550"
+    },
+    {
+      "id": 17,
+      "productname": "Sony WH-1000XM4",
+      "price": "14999",
+      "category": "Headphones",
+      "quantity": "30",
+      "img": "https://grandhub.co.ke/wp-content/uploads/2022/09/Sony-WH-1000XM4-Headphones-in-Kenya.jpg"
+    },
+    {
+      "id": 18,
+      "productname": "Apple iPhone 12 Pro",
+      "price": "110000",
+      "category": "256GB, Pacific Blue",
+      "quantity": "15",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000"
+    },
+    {
+      "id": 19,
+      "productname": "Samsung Galaxy S21 Ultra 5G",
+      "price": "130000",
+      "category": "512GB, Phantom Black",
+      "quantity": "10",
+      "img": "https://www.fkaysmartphone.com/web/image/product.product/23250/image_256"
+    },
+    {
+      "id": 20,
+      "productname": "MacBook Air",
+      "price": "95000",
+      "category": "13-inch, Apple M1 chip with 8‑core CPU and 7‑core GPU, 512GB",
+      "quantity": "8",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_IN?wid=1808&hei=1686&fmt=jpeg&qlt=80&.v=1603406905000"
+    },
+    {
+      "id": 21,
+      "productname": "Dell XPS 15",
+      "price": "120000",
+      "category": "15.6-inch 4K UHD+ (3840 x 2400) InfinityEdge Touch Anti-Reflective 500-Nit Display, 10th Generation Intel Core i7-10750H Processor (12MB Cache, up to 5.0 GHz, 6 cores), 16GB DDR4-2933MHz, 512GB SSD",
+      "quantity": "7",
+      "img": "https://www.notebookcheck.net/fileadmin/_processed_/f/f/csm_xps159570_b4596621f3.jpg"
+    },
+    {
+      "id": 22,
+      "productname": "Apple Watch Series 6",
+      "price": "40000",
+      "category": "44mm, Space Gray Aluminum Case with Black Sport Band",
+      "quantity": "12",
+      "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/F00J3?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1614983175000"
+    },
+    {
+      "id": 23,
+      "productname": "Samsung Galaxy Watch 3",
+      "price": "45000",
+      "category": "45mm, Mystic Black",
+      "quantity": "9",
+      "img": "https://cdn.mos.cms.futurecdn.net/Eu8qCpxfG3e54usC6bYb2B.jpg"
     }
+    
   ]
 }
