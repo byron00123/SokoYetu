@@ -49,18 +49,12 @@ import FilterCategory from './FilterCategory';
 
 function Navbar({ getSearch }) {
   const [cartItems, setCartItems] = useState([]);
-<<<<<<< HEAD
   const [search, setSearch] = useState("");
-=======
-  const [searchTerm, setSearchTerm] = useState('');
-  
->>>>>>> refs/remotes/origin/main
 
   const handleSearchChange = (event) => {
     setSearch(event.target.value);
   };
 
-<<<<<<< HEAD
   // const getSearch = (searchValue) => {
   //   // handle search logic here
 
@@ -70,10 +64,6 @@ function Navbar({ getSearch }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     getSearch(search)
-=======
-  const handleSearchSubmit = (event) => {
-    //handle search logic
->>>>>>> refs/remotes/origin/main
   };
   
 

@@ -55,8 +55,6 @@
       "category": "Laptop",
       "quantity": "20",
       "img": "https://textbookcentre.com/media/cache/e2/8c/e28c48fddc380ff93f961a968b954e0f.jpg"
-<<<<<<< HEAD
-=======
     },
     {
       "id": 10,
@@ -169,7 +167,6 @@
       "category": "45mm, Mystic Black",
       "quantity": "9",
       "img": "https://cdn.mos.cms.futurecdn.net/Eu8qCpxfG3e54usC6bYb2B.jpg"
->>>>>>> refs/remotes/origin/main
     }
     
   ]

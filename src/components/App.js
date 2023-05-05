@@ -157,13 +157,7 @@ function App() {
             element={
               <UpdateProduct
                 products={products}
-<<<<<<< HEAD
                 updateProduct={handleUpdateProduct}
-=======
-                addToCart={handleAddToCart}
-                deleteProduct={handleDeleteProduct}
-                editProduct={(id) => setProductId(id)}
->>>>>>> refs/remotes/origin/main
               />
             }
           />
