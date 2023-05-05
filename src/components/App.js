@@ -30,7 +30,7 @@ function App() {
   ];
 
   useEffect(() => {
-    fetch("http://localhost:8000/electronics")
+    fetch("https://electronics-w29s.onrender.com/electronics")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.log(error));
@@ -38,7 +38,7 @@ function App() {
 
   const handleAddProduct = async (product) => {
     try {
-      const response = await fetch("http://localhost:8000/electronics", {
+      const response = await fetch("https://electronics-w29s.onrender.com/electronics", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(product),
@@ -54,7 +54,7 @@ function App() {
 
   const handleUpdateProduct = async (id, product) => {
     try {
-      const response = await fetch(`http://localhost:8000/electronics/${id}`, {
+      const response = await fetch(`https://electronics-w29s.onrender.com/electronics/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(product),

@@ -6,7 +6,7 @@ function AddProduct(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:8000/electronics', product)
+    axios.post('https://electronics-w29s.onrender.com/electronics', product)
       .then((response) => {
         if (props.addProduct) {
           props.addProduct(response.data);

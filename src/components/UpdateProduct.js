@@ -19,7 +19,7 @@ function UpdateProduct({ productId }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`http://localhost:8000/electronics/${productId}`, {
+    fetch(`https://electronics-w29s.onrender.com/electronics/${productId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
